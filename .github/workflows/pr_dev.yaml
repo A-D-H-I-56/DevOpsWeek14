@@ -32,3 +32,5 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Push image on Docker Hub
         run: docker image push imranucp/myapp:latest
+      - name: End of Workflow
+        run: echo "End of Workflow"
