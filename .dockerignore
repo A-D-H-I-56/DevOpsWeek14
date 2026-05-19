@@ -4,4 +4,6 @@
 **/Dockerfile
 **/.parcel-cache
 **/dist
-**/package*.json
+# **/package*.json
+**/.htmlhintrc.json
+**/.stylelintrc.json
