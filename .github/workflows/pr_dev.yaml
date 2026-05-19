@@ -1,0 +1,21 @@
+name: wf_pr_devlop
+on:
+  pull_request:
+    branches:
+      - develop
+jobs:
+  pr_develop_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone Repo
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Repo Details
+        run: | 
+          echo git branch
+          echo "github.event_name: ${{github.event_name}}"
+          echo "github.action_ref: ${{github.action_ref}}"
+          echo "github.job: ${{github.job}}"
+          echo "github.repository_owner: ${{github.repository_owner}}"
+          echo "github.ref_name: ${{github.ref_name}}"
