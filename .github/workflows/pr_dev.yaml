@@ -12,7 +12,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: List files
-        run: git ls-tree --names-only HEAD
+        run: git ls-tree --name-only HEAD
       - name: npm ci
         run: npm ci
       - name: npx htmlhint **/*.html
