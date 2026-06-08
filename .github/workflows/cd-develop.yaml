@@ -6,6 +6,7 @@ on:
 jobs:
   deploy-on-render:
     runs-on: ubuntu-latest
+    environment: "development-env"
     steps:
       - name: Welcome Step
         run: echo "Deploying On Render"
